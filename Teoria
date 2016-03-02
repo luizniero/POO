@@ -29,3 +29,12 @@ programados diretamente no hwardware e os programas erm escritos diretamente na 
 programas é altamente custosa.
   Devido à evolução do hwardware e o maior acesso de instruções acadêmicas a computadores, surgiu um contexto favorável á criação
 de linguagens de mais alto nível.
+  A primeira dessas linguagens de alto nível foi o Fortran, criado em 1957, na IBM por uma equipe liderada por John Backus.
+  Essas primeiras linguagens pertencem ao paradigma procedual, no qual os programas são compostos de procedimentos que são chamados
+sequenciamente.  Neste paradigma, os programas terminam quando todos os procedimentos da lista de procedimentos são chamados e
+finalizados.
+  Exemplos de programa do paradigma procedual que resolve um sistema linear:
+      * Montagem da matriz e vetores do sistema
+      * Verificação de independ~encia linear
+      * Multiplicação de vetor por matriz
+      * Exibição dos resultados
