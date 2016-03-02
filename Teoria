@@ -12,29 +12,41 @@ Conteúdo:
 
 Aula 1 ------
   
-  Linguagens orientadas a Objetos existem desde a década de 1960 e é atualmente o paradigma de programação mais utilizado.
-  As linguagens de programação mais utilizadas no mercado pertencem ao paradigma de POO.
-  A POO é uma evolução natural do desenvolvimento de software, tendo sido desenvolvida para atender a uma demanda por um estilo de programação mais eficiente 
+  	Linguagens orientadas a Objetos existem desde a década de 1960 e é atualmente o paradigma de programação mais utilizado.
+  	As linguagens de programação mais utilizadas no mercado pertencem ao paradigma de POO.
+  	A POO é uma evolução natural do desenvolvimento de software, tendo sido desenvolvida para atender a uma demanda por um estilo de programação mais eficiente 
 e com menos linhas de código.
-  Orientação a objetos (OO) é um termo que engloba qualque estilo de desenvolvimento baseado no conceito de objeto (entidade que possui
+  	Orientação a objetos (OO) é um termo que engloba qualque estilo de desenvolvimento baseado no conceito de objeto (entidade que possui
 características e comportamentos).  Aplica-se tanto à programação quanto à  analise e à modelagem.
-  A OO é também uma forma de ver o mundo para desenvolver soluções utilizando os objetos e os relacionamentos entre eles.
+  	A OO é também uma forma de ver o mundo para desenvolver soluções utilizando os objetos e os relacionamentos entre eles.
   
-      Histórico da Programação de Computadores
+    		  Histórico da Programação de Computadores
       
-  A programação de computadores evoluiu muito nas últimas décadas, bem como os computadores e dispositivos.  Nos primórdios da informática,
+  	A programação de computadores evoluiu muito nas últimas décadas, bem como os computadores e dispositivos.  Nos primórdios da informática,
 os computadores eram compostos de válvulas eletromecãnicas que realizavam as operações e armazenavam dados.  Esses computadores eramam
 programados diretamente no hwardware e os programas erm escritos diretamente na memória, em código binário.
-  Esse estilo de programação, além de ser muito difícil é extramamente propenso a erros e a falhas (bugs).  Mas ainda, a manutenão desses
+  	Esse estilo de programação, além de ser muito difícil é extramamente propenso a erros e a falhas (bugs).  Mas ainda, a manutenão desses
 programas é altamente custosa.
-  Devido à evolução do hwardware e o maior acesso de instruções acadêmicas a computadores, surgiu um contexto favorável á criação
+  	Devido à evolução do hwardware e o maior acesso de instruções acadêmicas a computadores, surgiu um contexto favorável á criação
 de linguagens de mais alto nível.
-  A primeira dessas linguagens de alto nível foi o Fortran, criado em 1957, na IBM por uma equipe liderada por John Backus.
-  Essas primeiras linguagens pertencem ao paradigma procedual, no qual os programas são compostos de procedimentos que são chamados
+  	A primeira dessas linguagens de alto nível foi o Fortran, criado em 1957, na IBM por uma equipe liderada por John Backus.
+  	Essas primeiras linguagens pertencem ao paradigma procedual, no qual os programas são compostos de procedimentos que são chamados
 sequenciamente.  Neste paradigma, os programas terminam quando todos os procedimentos da lista de procedimentos são chamados e
 finalizados.
-  Exemplos de programa do paradigma procedual que resolve um sistema linear:
-      * Montagem da matriz e vetores do sistema
-      * Verificação de independ~encia linear
-      * Multiplicação de vetor por matriz
-      * Exibição dos resultados
+  	Exemplos de programa do paradigma procedual que resolve um sistema linear:
+    	* Montagem da matriz e vetores do sistema
+      	* Verificação de independ~encia linear
+      	* Multiplicação de vetor por matriz
+      	* Exibição dos resultados
+      
+      
+	Apesar da evolução da programação de computadores ter sido bastante significativa na transição de código binário para linguagens dea
+alto nível do paradigma procedual, existem alguns aspectos desse paradigma que comprometem o bom desempenho do desenvolvimento de
+software. 
+	Esses aspectos são a não reutilização de código e o caminho de execução confuso de um programa escrito sob o paradigma procedual.
+Muito frequentemente é necessário escrever procedimentos para desempenhar funções similares ou até mesmo idênticas.
+	Além disso, a programação procedual isola os dados dos procedimentos, tratanto estes de maneira separada.  Desta forma, uma pequena
+modificação no programa pode acarretar na necessidade de se realizar alterações no código interno.  isso dificulta a manutenção do
+programa.
+
+
