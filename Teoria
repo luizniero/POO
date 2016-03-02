@@ -1,0 +1,11 @@
+# POO
+
+Conteúdo:
+  1) Conceitos básicos:  identidade, estado e comportamento
+  2) Definição de Objetos por Classes
+  3) Classes:  Campos, métodos e construtores
+  4) Subclasses
+  5) Herança e Sobrescrita
+  6) Polimorfismo e subtipos
+  7) Encapsulamento:  Campos privados, interfaces e classes abstratas
+  8) Conceitos avançados:  Herança múltipla, mixins, threats e multimétodos.
