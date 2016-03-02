@@ -54,3 +54,21 @@ módulos, os dados internos ficam ocultos do restante do programa, sendo necess�
 	Os módulos contém informações de estado dos dados (variáveis) internas.  Contudo, os módulos não são extensíveis, não
 permitindo que eles sejam alterados para ampliar suas funcionalidades, Além de não permitirem que um módulo seja baseado em outro.
 
+
+	A POO surge3 então como uma evolução natural da programação modular, adicionando os conceitos de herança e polimorfismo.  Os
+conceitos de herança, polimorfismo, juntamente com o conceito de encapsulamento formam os pilares da POO.
+	Um programa orientado a objetos é dividido em objetos em que cada objeto representa alguns aspectos do problema a ser resolvido.
+	O foco da POO é manipular os objetos e os relacionamentos entre eles para direcionar o fluxo global de execução do programa.
+	A primeira etapa do desenvolvimento OO é o entendimento do domínio do problema e a elaboração de uma solução em nível conceitual.
+	
+	DEFINIÇÃO DE OBJETO:  
+		* Objeto é uma construção de software que encapsula estado e comportamentos
+		* Elemento computacional que representa no domínio da solução alguma entidade, abstrata ou concreta.
+		* Um objeto é uma entidade que possui uma identidade.
+		* Objetos são instâncias de uma classe
+	
+	DEFINIÇÃO DE CLASSE:
+		* A classe define todas as características e comportamentos comuns a um tipo de objeto
+		* Uma classefunciona como um molde para a criação de objetos, especificando quais são seus atributos (características)
+	e métodos (comportamentos).
+
