@@ -48,5 +48,9 @@ Muito frequentemente é necessário escrever procedimentos para desempenhar fun�
 	Além disso, a programação procedual isola os dados dos procedimentos, tratanto estes de maneira separada.  Desta forma, uma pequena
 modificação no programa pode acarretar na necessidade de se realizar alterações no código interno.  isso dificulta a manutenção do
 programa.
-
+	Na tentativa de melhorar alguns aspectos da programação procedual, surgiu a programação modular, representada pela linguagem
+Moduler 2.  Nesse estilo de programação, os programas são divididos em módulos que combinam dados e operações sobre os dados.  Nos
+módulos, os dados internos ficam ocultos do restante do programa, sendo necessário o uso de interfaces.
+	Os módulos contém informações de estado dos dados (variáveis) internas.  Contudo, os módulos não são extensíveis, não
+permitindo que eles sejam alterados para ampliar suas funcionalidades, Além de não permitirem que um módulo seja baseado em outro.
 
