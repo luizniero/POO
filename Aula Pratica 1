@@ -1,1 +1,12 @@
 
+Exercício 1:  Expecifique os objetos envolvidos no desenvolvimento das seguintes aplicações:
+  
+    a) Sistema de controle de notas e frequência de uma turma escolar;
+        Alunos, Notas, 
+    
+    b) Sistema de venda de produtos em uma loja de sapatos;
+        Sapato, Cliente
+    
+    c) Sistema de controle de pontuação e classificação de um campo de futebol
+        Time
+        
