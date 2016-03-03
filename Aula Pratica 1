@@ -32,3 +32,29 @@ Exercício 2:  Expecifique os atributos de cada um dos objetos do exercício 1.
             Número, Nome do Cliente, Emissão, Vencimento
 
 Exercício 3:  Especifique os métodos de cada objeto do exercício 1
+        turma: Alterar período corrente,
+                Alterar numero de alunos,
+                Exibir informações.
+                
+        Aluno:  Exibir informações,
+                Gerar boletim,
+                Registrar presença
+                Entregar trabalho
+                Matricular-se em disciplina
+                Registrar-se na turma
+                Calcular média
+                
+        Disciplina:  Atribuir horarios
+                Atribuir professor,
+                Atribuir nota mínima
+                Exibir inormações
+                Calcular média
+                
+        Avaliações:  Agendar avaliação
+                Atribuir nota
+                pesquisar por avaliação
+                
+        Presença
+                exibir informações
+                registrar presença
+                Abandonar por falta.
