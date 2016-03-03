@@ -12,12 +12,14 @@ Exercício 1:  Expecifique os objetos envolvidos no desenvolvimento das seguinte
         
 Exercício 2:  Expecifique os atributos de cada um dos objetos do exercício 1.
     a) Aluno
-          Nome, data de nascimento, RA, turma, sexo
+          Nome, data de nascimento, RA, turma, sexo, curso, Lista de disciplinas
        Presença
-          Disciplina, dia, aula
+          Aluno, Disciplina, dia, aula
        Avaliações
-          Disciplina, nota p1, nota p2
+          Disciplina, Aluno, tipo, nota p1, data, descrição
         Turma
-          Ano, Grade Curricular, Curso
+          Id, Descrição, Ano, Grade Curricular, Nro de Alunos
         Disciplina
-          Data p1, Data p2, bibliografia, tópicos, docente.
+          Id, Nome, período, professor, nota mínima, horário, Data p1, Data p2, bibliografia, tópicos, docente.
+          
+    
