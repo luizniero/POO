@@ -10,3 +10,14 @@ Exercício 1:  Expecifique os objetos envolvidos no desenvolvimento das seguinte
     c) Sistema de controle de pontuação e classificação de um campeonato de futebol
         Time, rodada, pontuação
         
+Exercício 2:  Expecifique os atributos de cada um dos objetos do exercício 1.
+    a) Aluno
+          Nome, data de nascimento, RA, turma, sexo
+       Presença
+          Disciplina, dia, aula
+       Avaliações
+          Disciplina, nota p1, nota p2
+        Turma
+          Ano, Grade Curricular, Curso
+        Disciplina
+          Data p1, Data p2, bibliografia, tópicos, docente.
