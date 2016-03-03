@@ -5,7 +5,7 @@ Exercício 1:  Expecifique os objetos envolvidos no desenvolvimento das seguinte
         Aluno, Nota 1, Nota 2, Nota rec, Semestre/Ano, Matéria. 
     
     b) Sistema de venda de produtos em uma loja de sapatos;
-        Sapato, Cliente, Forma de Pagamento
+        Sapato, Cliente, Forma de Pagamento, Nota Fiscal
     
     c) Sistema de controle de pontuação e classificação de um campeonato de futebol
         Time
