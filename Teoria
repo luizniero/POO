@@ -71,4 +71,10 @@ conceitos de herança, polimorfismo, juntamente com o conceito de encapsulamento
 		* A classe define todas as características e comportamentos comuns a um tipo de objeto
 		* Uma classefunciona como um molde para a criação de objetos, especificando quais são seus atributos (características)
 	e métodos (comportamentos).
+	
+	DEFINIÇÃO DE ATRIBUTO:
+		* São características de um objeto (ex: Cor, nome, tipo, etc).
+		
+	DEFINIÇÃO DE MÉTODO:
+		* Ação executada por um objeto quando uma mensagem é passada em resposta a uma mudança de estado
 
