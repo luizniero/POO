@@ -22,4 +22,11 @@ Exercício 2:  Expecifique os atributos de cada um dos objetos do exercício 1.
         Disciplina
           Id, Nome, período, professor, nota mínima, horário, Data p1, Data p2, bibliografia, tópicos, docente.
           
-    
+    b) Produto
+            Id, Descrição, Preço, Cor, Tamanho
+        Cliente
+            Nome, CPF, endereço
+        Forma de Pagamento
+            Espécie, nro. cartao, deb/cred, prazo recebimento
+        Nota Fiscal
+            Número, Nome do Cliente, Emissão, Vencimento
