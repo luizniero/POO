@@ -159,60 +159,7 @@ conceitos de herança, polimorfismo, juntamente com o conceito de encapsulamento
 			| displayInfo():void					|
 			|-------------------------------------------------------|
 			
-	#include<iostream>
-using std::cout;
-using std::cin;
 
-class Pessoa
-{
-	private:
-		char Nome[100];
-		char CPF[14];
-		int Idade;
-		float salario;
-	public:
-		Pessoa();
-		void atualizarCadastro(char *Nome,char *CPF);
-		void setSalario(float Salario);
-		float getSalario();
-		void calcularIdade(int dn, int mn, int an);
-		int getIdade();
-		void display_Info();		
-};
-
-int main()
-{
-}
-
-Pessoa::Pessoa()
-{
-	cout<<"Informe o nome: ";
-	cin>>Nome;
-	
-	cout<<"\nInforme o CPF: ";
-	cin>>CPF;
-	
-	cout<<"\nInforme o Salario: ";
-	cin>>salario;
-}
-
-void Pessoa::setSalario(float salario)
-{
-	this.salario = salario;
-}
-
-float Pessoa::getSalario()
-{
-	return salario;	
-}
-
-int Pessoa::getIdade()
-{
-	return Idade;
-}
-		
-		
-		
 		
 		
 		
