@@ -1,0 +1,78 @@
+        	|-------------------------------------------------------|
+			|	Pessoa						                        |
+			|-------------------------------------------------------|
+			| Nome: string				                    		|
+			| CPF:  string				                    		|
+			| Idade: int				                    		|
+			| Salario: float			                    		|
+			|-------------------------------------------------------|
+			| Pessoa()					                        	|
+			| Atualizar_cadastro (string Nome, string CPF):void     |
+			| setSalario(float Salario):void		            	|
+			| getSalario():float				                	|
+			| Cadastrar_Idade(int dn, int mn, int an):void  		|
+			| getIdade():int				                    	|
+			| displayInfo():void				                   	|
+			|-------------------------------------------------------|
+			
+ex1:
+#include<iostream>
+#include<ctime>
+#include<clocale>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+class Pessoa{
+	private:
+		char Nome[100];
+		char CPF[14];
+		int Idade;
+		float salario;
+	public:
+		Pessoa();
+		void atualizarCadastro(char *Nome, char *CPF);
+		void setSalario(float Salario);
+		float getSalario();
+		void calcularIdade(int dn, int mn, int an);
+		int getIdade();
+		void display_Info();		
+};
+
+
+Pessoa::Pessoa() {
+	cout<<"\nInforme o nome: ";
+	//cin>>Nome; //o cin pega só uma palavra.
+	cin.getline(Nome, 100); //para ler a string inteira, utiliza o getline
+	
+	cout<<"\nInforme o CPF: ";
+	//cin>>CPF;
+	cin.getline(CPF, 14);
+	
+	cout<<"\nInforme o Salario: ";
+	cin>>salario;
+	cin.ignore();
+};
+
+
+int main() {
+	setlocale(LC_ALL,"portuguese");
+	
+	Pessoa *p1 = new Pessoa(); //precisa criar o objeto pois é um ponteiro.  O padrão é utilizar o ponteiro.  Em java, tudo é ponteiro, tudo é por referência.
+	Pessoa p2; //declarado como variável, é criado automaticamente.
+	
+	cout<<"\n\nPessoa 1\n";
+	p1->display_Info(); //se tiver tratando como ponteiro, utiliza-se o -> para acessar aos métodos e atrib8utos
+	cout<<"\n\nPessoa 2\n";
+	p2.display_Info(); //se tiver tratando como objeto normal, utiliza o . para acessar os métodos e atributos.
+	system("pause");	
+}
+
+
+void Pessoa::display_Info(){
+	cout<<"Ola "<<Nome
+		 <<"\n seu CPF é:" <<CPF
+		 <<"\ n você recebe" <<salario
+		 <<" reais por mês."<<endl;
+}
