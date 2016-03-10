@@ -78,3 +78,76 @@ conceitos de herança, polimorfismo, juntamente com o conceito de encapsulamento
 	DEFINIÇÃO DE MÉTODO:
 		* Ação executada por um objeto quando uma mensagem é passada em resposta a uma mudança de estado
 
+	COMUNICAÇÃO ENTRE OBJETOS
+		Um objeto pode acionar ou exercer o comportamento de outro objeto ao executar uma operçaão sobre este último.
+	Essa interação é chamada de passagem de mensagens ou chamada a método ou chamada a função.  Isso omite detalhes de 
+	implementação e funcionamento dos objetos.
+	
+	RESUMINDO
+		 A classe define o molde para a criação dos objetos.  A classe também define quais serão as características e
+	comportamentos comuns a todos os objetos da classe.
+		O objeto é uma instância da classe que possui valores próprios para os atributos e executam métodos sobre esses dados.
+		
+	VANTAGENS DA ORIENTAÇÃO A OBJETOS
+		1) Natural
+		2) Confiável
+		3) Reutilizável
+		4) Manutenção
+		5) Extensível
+		6) Oportuna
+		
+	ENCAPSULAMENTO
+		O primeiro pilar da POO é o encapsulamento, característica de ocultar partes da implementação dos demais objetos
+	utilizados no sistema.
+		Deixa indisponível os detalhes de implementação de alguma funcionalidade.  O encapsulamento permite a criação
+	dos chamados softwares caixa preta.
+		Nos software caixa preta, as demais partes do sistema vêem apenas a interface.  Uma interface lista os serviços
+	disponíveis para o restante do sistema que são formados por aquele objeto.  A interface pode ser vista como  o painel
+	de controle do objeto, especificando o que o objeto pode fazer sem que se saiba como as coisas são feitas.
+	
+	
+		TIPOS DE ENCAPSULAMENTO
+			PÚBLICO (+) : Todos os objetos tem acesso à informação;
+			PROTEGIDO (#): Apenas as instâncias da classe e subclasses tem acesso à informação;
+			PRIVADO (-):  Apenas as instâncias da classe tem acesso à informação.
+		Exemplo:
+		
+			|-------------------------------|
+			|	Pessoa			|
+			|-------------------------------|
+			| Nome				|
+			| RG				|
+			| Data Nasc			|
+			|-------------------------------|
+			| Cadastrar():void		|
+			| Obter_info():void		|
+			| Calcular_Idade(data_hoje):int |
+			|-------------------------------|
+		
+			
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+		
+		
+		
+		
