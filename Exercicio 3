@@ -1,0 +1,54 @@
+//2) Carrinho correndo
+
+#include<iostream>
+#include<cmath>
+
+using std::cin;
+using std::cout;
+using std::endl;
+
+class Carrinho{
+	private:
+		float Velocidade[3];
+		float VelEscalar;
+	public:
+		Carrinho();
+		void Norma();
+		float getVelEscalar();	
+};
+
+int main(){
+	setlocale(LC_ALL,"portuguese");
+			
+	//Carrinho *c1 = new Carrinho();
+	Carrinho C[3];
+	
+	for(int i=0;i<3;i++){
+		C[i].Norma();
+		cout<<"A velocidade escalar eh:"<<C[i].getVelEscalar()<<endl;
+	}
+	system("pause");
+	
+	
+}
+
+Carrinho::Carrinho(){ //:: diz que o método Carrinho() pertence à classe carrinho.  Nesse caso, é o construtor, por isso que não utiliza um tipo.
+	cout<<"\nInforme as componentes do vetor velocidade:";
+	cout<<"\nX:";
+	cin>>Velocidade[0];
+	cout<<"\nY:";
+	cin>>Velocidade[1];
+	cout<<"\nZ:";	
+	cin>>Velocidade[2];
+}
+
+void Carrinho::Norma(){
+	VelEscalar =sqrt( Velocidade[0]*Velocidade[0] + \ 
+			     Velocidade[1]*Velocidade[1] + \
+			     Velocidade[2]*Velocidade[2]);
+	
+}
+
+float Carrinho::getVelEscalar(){
+	return VelEscalar;
+}
