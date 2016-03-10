@@ -125,7 +125,91 @@ conceitos de herança, polimorfismo, juntamente com o conceito de encapsulamento
 			|-------------------------------|
 		
 			
+	MÉTODOS ESPECIAIS
+	
+		MÉTODOS CONSTRUTORES: Método chamado no momento da criação do objeto.  Comumente atribui valores iniciais ao
+		objeto.  Deve possuir o mesmo nome da classe, são métodos públicos e não possuem especificador de tipo de retorno.
 		
+		MÉTODOS DESCONSTRUTORES: São métodos especiais que liberam o espaço alocado pelos objetos quando eles não são mais
+		necessários ao programa.  São declarados pelo mesmo nome da classe precedido do símbulo.  Não possuem especificador
+		do tipo retorno.
+		
+		MÉTODOS ACESSORES: São métodos que dão acesso às informações do objeto.  Servem como intermediários entre os
+		atributos, normalmente privados, e os demais objetos do programa.  Os métodos acessores são iniciados pela
+		palavra GET.
+		
+		MÉTODOS MODIFICADORES: São métodos que realizam a modificação das informações do objeto.  São utilizado para
+		prevenir e evita alterações indesejadas dos atributos da classe.  Os métodos modificadores são iniciados pela
+		palavra SET.
+		
+			|-------------------------------------------------------|
+			|	Pessoa						|
+			|-------------------------------------------------------|
+			| Nome: string						|
+			| CPF:  string						|
+			| Idade: int						|
+			| Salario: float					|
+			|-------------------------------------------------------|
+			| Pessoa()						|
+			| Atualizar_cadastro (string Nome, string CPF):void     |
+			| setSalario(float Salario):void			|
+			| getSalario():float					|
+			| Cadastrar_Idade(int dn, int mn, int an):void		|
+			| getIdade():int					|
+			| displayInfo():void					|
+			|-------------------------------------------------------|
+			
+	#include<iostream>
+using std::cout;
+using std::cin;
+
+class Pessoa
+{
+	private:
+		char Nome[100];
+		char CPF[14];
+		int Idade;
+		float salario;
+	public:
+		Pessoa();
+		void atualizarCadastro(char *Nome,char *CPF);
+		void setSalario(float Salario);
+		float getSalario();
+		void calcularIdade(int dn, int mn, int an);
+		int getIdade();
+		void display_Info();		
+};
+
+int main()
+{
+}
+
+Pessoa::Pessoa()
+{
+	cout<<"Informe o nome: ";
+	cin>>Nome;
+	
+	cout<<"\nInforme o CPF: ";
+	cin>>CPF;
+	
+	cout<<"\nInforme o Salario: ";
+	cin>>salario;
+}
+
+void Pessoa::setSalario(float salario)
+{
+	this.salario = salario;
+}
+
+float Pessoa::getSalario()
+{
+	return salario;	
+}
+
+int Pessoa::getIdade()
+{
+	return Idade;
+}
 		
 		
 		
