@@ -1,0 +1,25 @@
+Trabalho 1: não sei se é POO ou ED
+Trazer a implementação dos itens com essas informações
+
+        |---------------------------------------------------|
+        |               Item                                |
+        |---------------------------------------------------|
+        | Id: (int)                                         |
+        | Nome: (string)                                    |
+        | Descricao: (string)                               |
+        | DataValidade: (string) //pode trabalhar com int!  |
+        | Preco: (float)                                    |
+        | Quantidade: (int)                                 |
+        | Desconto: (float)                                 |
+        |___________________________________________________|
+        | + Item()                                          |    
+        | + setPreco(float): void                           |
+        | + getPreco(): float                               |
+        | + setDesconto(float): void                        |
+        | + getDesconto():float                             |
+        | + setQuantidade(int): void                        |
+        | + getQuantidade(): int                            |
+        | + calculaPrecoTotal(): float                      |
+        | + verificaValidade(): bool                        |
+        | + displayInfo(): void                             |
+        |___________________________________________________|
