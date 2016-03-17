@@ -23,3 +23,141 @@ Trazer a implementação dos itens com essas informações
         | + verificaValidade(): bool                        |
         | + displayInfo(): void                             |
         |___________________________________________________|
+       
+    
+#include<iostream>
+#include<clocale>
+#include<ctime>
+#include<cstdlib>
+#include<iomanip>
+
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::ios;
+
+using std::setw;
+using std::setiosflags;
+using std::setprecision;
+
+
+
+    class Item{
+    private: //Todos os atributos daclasse são privados.  Isso ocorre pelo fenômeno do encapsulamento, um dos pilares da poo.
+        int id;
+        char nome[100];
+        char descricao[100];
+        int diavenc;
+        int mesvenc;
+        int anovenc;
+        float preco;
+        int quantidade;
+        float desconto;
+    public: //Os métodos da classe serão todos públicos.
+        Item *prox;
+        Item();//construtor
+        void setPreco(float preco);
+        float getPreco();
+        void setDesconto(float desconto);
+        float getDesconto();
+        void setQuantidade(int quantidade);
+        int getQuantidade();
+        float calculaPrecoTotal();
+        bool verificaValidade();
+        void displayInfo();
+    };//fim da definição da classe.
+
+
+    int main () {
+	setlocale(LC_ALL, "portuguese");
+	cout<<setiosflags(ios::fixed | ios::showpoint)<<setprecision(2);
+	Item objeto = new Item(); //chama a construcao de um novo objeto, chamado de objeto ^^.
+	system("pause");
+	return 0;
+}
+
+Item::Item(){ //construtor do objeto
+	time_t t = time(0);
+	id = t;
+	cout<<"ID = "<<id<<endl;
+	cout<<"Nome do Produto: ";
+	cin.ignore();
+	cin.getline(nome, 100);
+	cout<<"Descricao do Produto: ";
+	cin.getline(descricao, 100);
+	cout<<"Dia do vencimento:";
+	cin>>diavenc;
+	cout<<"Mês do vencimento:";
+	cin>>mesvenc;
+	cout<<"Ano do vencimento:";
+	cin>>anovenc;
+	prox = NULL;
+}
+
+void Item::displayInfo(){ //método que exibe as informações na tela.
+	cout<<"\nProduto: "<<id
+		<<"\n"<<Nome<<" - "<<descricao
+		<<"\nVálido até: "<<diavenc<<"/"<<mesvenc<<"/"<<anovenc
+		<<"\nQuantidade: "<<quantidade
+		<<"\nR$"<<preco<<" - Desconto: "<<desconto<<"%"<<endl;
+}
+
+
+void Item::setPreco(float preco){
+	this->preco = preco;
+}
+
+float Item::getPreco(){
+	return preco;
+}
+
+void Item::setDesconto(float desconto){
+	this->desconto = desconto;
+}
+
+float Item::getDesconto(){
+	return desconto;
+}
+
+void Item::setQuantidade(int quantidade){
+	this->quantidade = quantidade;
+}
+
+int Item::getQuantidade() {
+	return quantidade;
+}
+
+float Item::calculaPrecoTotal(){
+	float precoFinal;
+	precoFinal = quantidade*(preco - preco*(desconto/100));
+	return precoFinal;
+}
+
+
+bool Item::verificaValidade(){
+	int dia, mes, ano;
+	bool eValido = true;
+	time_t t = time(0);   // obter a hora atual
+    struct tm *now = localtime( & t );
+
+	dia = diavenc;
+	mes = mesvenc;
+	ano = anovenc;
+
+	if((now->tm_year+1900) > ano){
+		eValido = false;
+	}
+	else if((now->tm_year+1900) == ano && (now->tm_mon+1) > mes) {
+		eValido = false;
+	}
+	else if((now->tm_year+1900) == ano && (now->tm_mon+1) == mes && now->tm_mday > dia) {
+		eValido = false;
+	}
+	return eValido;
+}
+
+        
+        
+        
+        
