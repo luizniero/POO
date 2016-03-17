@@ -1,0 +1,252 @@
+#include<iostream>
+#include<clocale>
+#include<ctime>
+#include<cstdlib>
+#include<iomanip>
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::ios;
+using std::setw;
+using std::setiosflags;
+using std::setprecision;
+
+/*
+//emissão do cupom
+void cupom (item *i1){
+	//valor unitário, quantidade, total a pagar, desconto
+	cout<<"Valor Unitário: "<<preco;
+	cout<<"Quantidade: "<<quantcomprada;
+	cout<<"Desconto: "<<desconto;
+	cout<<"Total a pagar: "<<preco*quant-desconto;
+	
+	estoque=estoque-quantcomprada;//dedução do estoque
+}
+*/
+
+
+class Item 
+{
+	private:
+		int ID;
+		char Nome[50];
+		float Preco;
+		int QtdE;
+	public:
+		Item *prox;
+		Item();
+		void setID (int ID);
+		int getID ();
+		void setNome (char Nome[]);
+		char* getNome();
+		void setPreco(float Preco);
+		float getPreco();
+		void setQtdE(int QtdE);
+		int getQtdE();
+		
+};
+
+
+class ListaProd {
+		private:
+			Item *Lista;
+		public:
+			ListaProd();
+			void Creat();
+			Item* Read(char Nome[]);
+			void Update();
+			void Delete(char Nome[]);
+			void imprimirLista();
+};
+
+class Controle {
+		private:
+			int ID;
+		public:
+			int venda(Item *p);
+			int compra();
+			int calcE();
+			
+};
+
+
+
+int main (){
+	setlocale (LC_ALL, "portuguese");
+	int opc=0;
+	ListaProd *L = new ListaProd();
+	
+	do{
+		cout<<"\t\t----Controle de Estoque----\n\n"
+		<<"1 - Criar\n"
+		<<"2 - Deletar\n"
+		<<"3 - Mostrar Estoque\n"
+		<<"4 - Comprar\n"
+		<<"9 - Sair\n";
+		cin>>opc;
+			
+		if (opc!=1 && opc!= 2 && opc!=3 && opc!=4 && opc!=9){
+			system("cls");
+			cout<<"Entrada Inválida! Insira um valor entre 1 e 4!\n\n";
+			system("pause");
+			cout<<"\n\n";
+			system("cls");
+		}
+		
+	}while(opc!=9);
+	if (opc == 1)
+			L->Creat();
+	else if (opc == 2)
+			L->Delete(Item->getNome()); 
+	else if (opc == 3)
+			L->imprimirLista();	
+	else if (opc == 4)
+		Controle->venda(Item->getNome());
+}
+
+Item::Item(){ //construtor
+	time_t t = time(0);
+	ID = t;	
+	cout<<"\nNome do Produto: ";
+	cin.ignore();
+	cin.getline(Nome, 50);
+	cout<<"\nPreço: ";
+	cin>>Preco;
+	cout<<"\nQuantidade: ";
+	cin>>QtdE;
+	Item *item=new Item();
+}
+
+void Item::setPreco(float Preco){
+	this->Preco = Preco;
+}
+
+float Item::getPreco(){
+	return Preco;
+}
+
+void Item::setQtdE(int QtdE){
+	this->QtdE = QtdE;
+}
+
+int Item::getQtdE() {
+	return QtdE;
+}
+		
+char* Item::getNome(){
+	return Nome;
+}
+				
+		
+void ListaProd::Creat()
+{
+	Item *Novo = new Item();
+	cout<<"\nInforme o preço do produto: ";
+	float preco;
+	cin>>preco;
+	Novo->setPreco(preco);
+	cout<<"\nInforme a quantidade: ";
+	int QtdE;
+	cin>>QtdE;
+	Novo->setQtdE(QtdE);
+	Novo->prox = Lista;
+	Lista = Novo;	
+}
+
+Item* ListaProd::Read(char Nome[])
+{
+	Item *aux=NULL;
+	if(Lista!=NULL)
+	{
+		aux=Lista;
+		while (aux!=NULL && strcmp(aux->getNome(),Nome)!=0) 
+		{
+			aux=aux->prox;
+		}
+		if (aux==NULL) 
+		{
+			cout<<"ELEMENTO NAO ENCONTRADO\n";
+		}
+	} else
+	{
+		cout<<"A LISTA ESTA VAZIA\n";
+	} 
+	return aux;
+}
+
+void ListaProd::Delete(char Nome[])
+{
+	Item *ant, *exc;
+	if(Lista!=NULL)
+	{
+		exc = Read(Nome);
+		if(exc!=NULL)
+		{
+			if(exc==Lista)
+			{
+				Lista = Lista->prox;
+			}
+			else 
+			{
+				ant = Lista;
+				while(ant!=NULL && ant->prox != exc)
+				{
+					ant = ant->prox;
+				}
+				if(ant!=NULL)
+				{
+					ant->prox = exc->prox;
+				}
+			}
+			delete(exc);
+		}
+		else
+		{
+			cout<<"\nO item não existe.\n";
+		}
+	}
+	else
+	{
+		cout<<"\nA lista é vazia\n";
+	}
+}
+
+void ListaProd::imprimirLista(Item *inicio)
+{
+	Item *aux=inicio;
+	Item *aux2;
+	float valorestoque=0; 
+	
+	while(aux!=NULL)
+	{
+		cout<<aux;
+		aux=aux->prox;
+		cout<<"Valor em estoque deste produto: R$ "<<(getPreco()*getQtdE());
+		valorestoque=valorestoque+(getPreco()*getQtdE());
+	}
+	
+	cout<<"Valor Total em estoque: R$ "<<valorestoque;
+}
+
+int Controle::venda(Item *p)
+{
+	int aux;
+	cout<<"\nQuantidade a ser comprada?";
+	cin>>aux;
+	if(aux>p->getQtdE())
+	{
+		cout<<"Falta produtos em estoque!!!";
+	}
+	
+	else
+	{
+		
+	}
+	
+}
+		
+		
+		
+		
+		
