@@ -173,13 +173,26 @@ AULA 4 -------------------------------------------------------------------------
 
 	HERANÇA
 	
-		O encapsulamento permite que um objeto use outro através da mensagem (ex: getPreco).
+		O encapsulamento permite que um objeto use outro objeto através da mensagem (ex: getPreco).
 		A herança é uma outra maneira de relacionamento entre objetos
 		"Herança é um mecanismo que permite criar a definição de uma nova classe baseada em uma classe previamente existente".
 		Quando uma classe realiza a herança de outra, todos os métodos e atributos automaticamente aparecerão na nova classe,
 	condicionado ao encapsulamento desejado.
 	
+		Considere a classe Empregado
+		classe Empregado{
+			private:
+				char nome[100];
+				float salario;
+			public:
+				Empregado(char nome[], float salario);
+				float getSalario();
+				char* getNome();
+		};
 		
+		A classe Empregado pode aparecer em um sistema de folha de pagamento, por exemplo.
+		Agora, considere a criação da classe EmpregadoComissionado, que, receba comissão por venda que realiza.
+	Como podemos implementar essa nova classe?
 		
 	
 	
