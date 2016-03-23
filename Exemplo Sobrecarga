@@ -1,0 +1,20 @@
+class Item{
+  public
+    float calculaPrecoTotal();
+    float calculaPrecoTotla(int min);
+};
+
+float item::calculPrecoTotal(){
+  float preco Final;
+  precoFinal = Qtdd*(Preco*(1- desconto/100));
+  return precoFinal;
+}
+
+float item::calculaPrecoFinal(int min){
+  float precoFinal;
+  if(Qtdd>=min)
+    precoFinal=Qtdd*(Preco*(1- desconto/100));
+  else
+    precoFinal = Qtdd*preco;
+  return precoFinal
+}
