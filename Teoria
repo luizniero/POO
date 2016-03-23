@@ -194,6 +194,16 @@ AULA 4 -------------------------------------------------------------------------
 		Agora, considere a criação da classe EmpregadoComissionado, que, receba comissão por venda que realiza.
 	Como podemos implementar essa nova classe?
 		
+		Note que, exceto pelo valor da comissão e o número de produtos vendidos, as classes Empregado e Empregado Comissionado
+	são idênticas.
+		Existem 3 opções de implementação de classe EmpregadoComissionado:
+		
+		Opção1: Poderíamos copiar o código da classe Empregado e adaptar o código às especificações ca classe
+		Empregado Comissionado e adaptar o código às especificações da nova classe.  Esta opção não representa uma boa
+		opção, pois qualquer alteração na forma de tratamento de Empregados no sistema implica na necessidade de
+		alteração em diferentes partes do código.
+		
+		Opção2:  Podemos incluir um objeto empregado como atributo da classe Empregado Comissionado.
 	
 	
 	
