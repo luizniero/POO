@@ -208,8 +208,22 @@ AULA 4 -------------------------------------------------------------------------
 		característica).  Além disso, a operação da classe é totalmente dependente da passagem de mensagem a alguem,
 		ou todos, os métodos precisam ser redefinidos.
 	
-	
-	
+		Opção3:  Utilizar herança para basear a classe Empregado comissionado
+		
+		class EmpregadoComissionado:Empregado{
+			private:
+				float comissao;
+				int unidades
+			public:
+				EmpregadoComissionado(char* nome, float salario, float comissao);
+				float calcularPagamento();
+				void registrarVenda();
+				void zerarVendas();
+		};
+		
+		A herança pode ser usada para aproveitar a implementação para atender a mua necessidade específica, e também é uma
+		forma de agrupar classes relacionadas.
+		
 	
 		
 		
