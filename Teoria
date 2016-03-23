@@ -203,7 +203,10 @@ AULA 4 -------------------------------------------------------------------------
 		opção, pois qualquer alteração na forma de tratamento de Empregados no sistema implica na necessidade de
 		alteração em diferentes partes do código.
 		
-		Opção2:  Podemos incluir um objeto empregado como atributo da classe Empregado Comissionado.
+		Opção2:  Podemos incluir um objeto empregado como atributo da classe Empregado Comissionado.  Essa solução implica
+		em um problema conceitual na especificação da solução (o empregado comissonado deve ter um empregado como
+		característica).  Além disso, a operação da classe é totalmente dependente da passagem de mensagem a alguem,
+		ou todos, os métodos precisam ser redefinidos.
 	
 	
 	
