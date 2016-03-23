@@ -250,7 +250,10 @@ AULA 4 -------------------------------------------------------------------------
 						|__Classe D__|		|__Classe E__|
 	
 	
-	
+		Tipos de métodos e atributos da herança
+			* Sobreposto (sobrescrito): redefinição;
+			* Novo: adição de novo componente;
+			* Recursivo:  utiliza o método da classe base.
 	
 		
 		
