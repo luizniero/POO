@@ -169,6 +169,7 @@ AULA 4 -------------------------------------------------------------------------
 		Nas linguagens orientadas a objetos há a possibilidade de utilizar métodos com o mesmo nome, definidos dentro
 	da mesma classe, que implementam a mesma funcionalidade de maneiras diferentes.  Para tanto, é preciso que este
 	métodos sejam diferentes em sua lista de parâmetros, diferentes na qualidade, tipos ou ordens de parâmetros.
+		Tem como objetivo facilitar a nomenclatura:  não tem de dar nomes diferentes para métodos que fazem a mesma coisa
 
 		
 		
