@@ -210,7 +210,7 @@ AULA 4 -------------------------------------------------------------------------
 	
 		Opção3:  Utilizar herança para basear a classe Empregado comissionado
 		
-		class EmpregadoComissionado:Empregado{
+		class EmpregadoComissionado:Empregado{ //O dois pontos é a sintaxe para a herança.
 			private:
 				float comissao;
 				int unidades
@@ -220,11 +220,21 @@ AULA 4 -------------------------------------------------------------------------
 				void registrarVenda();
 				void zerarVendas();
 		};
+		Não consigo ter acesso aos atributos privados da classe Empregado, mas tenho acesso aos métodos (getnome, getsalario).
+		Posso utilizar, EmpregadoComissionado->getNome(), e ele então irá assionar getnome() da classe Empregado, que foi a 
+		origem da herança.
 		
 		A herança pode ser usada para aproveitar a implementação para atender a mua necessidade específica, e também é uma
 		forma de agrupar classes relacionadas.
 		
-	
+		Nonemclatura
+			* Class bare ou classe mãe ou superclasse é a classe que servirá de base para outras;
+			* Classe derivada ou classe filha ou subclasse é a classe que herda as informações de outra classe.
+		
+		Quando usar a Herança
+			Imagine que você tem 2 classes (A e B).
+			A hernaça deve ser utilizada quando um objeto da classe A é um objeto da classe B também.
+		ex: Se a classe A tem a classe B então não é o mais indicado usar herança. Ex:  O carro tem o motor
 		
 		
 		
