@@ -236,12 +236,18 @@ AULA 4 -------------------------------------------------------------------------
 			A hernaça deve ser utilizada quando um objeto da classe A é um objeto da classe B também.
 		ex: Se a classe A tem a classe B então não é o mais indicado usar herança. Ex:  O carro tem o motor
 		
-		
-		
-	
-	
-	
-	
+		HIERARQUIA DE CLASSES
+			As classes em um programa podem  herdar comportamento e atributos de uma outra classe, e, ao mesmo tempo,
+			servir de base para a criação de novas classes.  Os objetos conseguem acessar métodos e atributos que
+			estão em classes superiores na hierarquia de herança.
+			
+				       	______________
+					|__Classe A__|
+			__________________|________|__________________
+			|__Classe B__|			|__Classe C__|	
+							_________|________________
+						________|____		________|_____
+						|__Classe D__|		|__Classe E__|
 	
 	
 	
