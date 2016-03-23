@@ -171,7 +171,14 @@ AULA 4 -------------------------------------------------------------------------
 	métodos sejam diferentes em sua lista de parâmetros, diferentes na qualidade, tipos ou ordens de parâmetros.
 		Tem como objetivo facilitar a nomenclatura:  não tem de dar nomes diferentes para métodos que fazem a mesma coisa
 
-		
+	HERANÇA
+	
+		O encapsulamento permite que um objeto use outro através da mensagem (ex: getPreco).
+		A herança é uma outra maneira de relacionamento entre objetos
+		"Herança é um mecanismo que permite criar a definição de uma nova classe baseada em uma classe previamente existente".
+		Quando uma classe realiza a herança de outra, todos os métodos e atributos automaticamente aparecerão na nova classe,
+	condicionado ao encapsulamento desejado.
+	
 		
 		
 	
