@@ -158,7 +158,17 @@ conceitos de herança, polimorfismo, juntamente com o conceito de encapsulamento
 			| getIdade():int					|
 			| displayInfo():void					|
 			|-------------------------------------------------------|
-			
+
+AULA 3 - Prática - Exercícios no repositório POO.			
+AULA 4 ---------------------------------------------------------------------------------------------------------------------------
+
+	SOBRECARGA DE MÉTODOS
+		Em determinadas ocasiões, podem existir duas ou mais formas de se implementar a mesma funcionalidade.
+	Na programação procedual, criam-se dois procedimentos (funções) com nomes distintos para executar a mesma funcionalidade
+	de formas diferentes.
+		Nas linguagens orientadas a objetos há a possibilidade de utilizar métodos com o mesmo nome, definidos dentro
+	da mesma classe, que implementam a mesma funcionalidade de maneiras diferentes.  Para tanto, é preciso que este
+	métodos sejam diferentes em sua lista de parâmetros, diferentes na qualidade, tipos ou ordens de parâmetros.
 
 		
 		
