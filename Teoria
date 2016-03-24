@@ -254,8 +254,17 @@ AULA 4 -------------------------------------------------------------------------
 			* Sobreposto (sobrescrito): redefinição;
 			* Novo: adição de novo componente;
 			* Recursivo:  utiliza o método da classe base.
+
+UTILIZANDO IDE'S NO C++
 	
-		
+	DIVIDINDO O CÓDIGO EM ARQUIVOS
+	 -> Criar um Projeto no dev c++
+	 	Cada arquivo de classe será dois arquivos:  um arquivo de cabeçalho, .h, e um arquivo de implementação, .cpp.
+	 	Criar um projeto.
+	 	Adicionr arquivos.
+	 	salvar, num arquivo do projeto, o código.  O nome do arquivo deve ser o nome da classe.
+	 	Criar um arquivo, que contém da primeira linha até o fim da implementação da classe, e salvar como nomedaclasse.h;
+	 	No arquivo do código (item.cpp), dar um include no arq. de cabeçalho(item.h).
 		
 		
 		
