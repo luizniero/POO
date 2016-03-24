@@ -265,6 +265,9 @@ UTILIZANDO IDE'S NO C++
 	 	salvar, num arquivo do projeto, o código.  O nome do arquivo deve ser o nome da classe.
 	 	Criar um arquivo, que contém da primeira linha até o fim da implementação da classe, e salvar como nomedaclasse.h;
 	 	No arquivo do código (item.cpp), dar um include no arq. de cabeçalho(item.h).
+		No final de toda divisão, no linux, compile os itens .cpp, e então ele irá gerar o executável no que você pedir.
+		
+		Ex: g++ ItensLista.cpp Itens.cpp main.cpp -o ItensLista
 		
 		
 		
