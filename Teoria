@@ -272,22 +272,34 @@ UTILIZANDO IDE'S NO C++
 		
 RETORNANDO A HERANÇA....
 		# = atributo protegido (nem público e nem privado)
-			|---------------------------------------------------------------|
-			|		Conta_Bancaria				    	|
-			|---------------------------------------------------------------|
-			|	# Nome: string						|
-			|	# Agencia: int						|
-			|	# NroConta: int						|
-			|	# Saldo: float						|
-			|---------------------------------------------------------------|
-			| + Conta_Bancaria(); //construtor				|
-			| + void Cadastro();						|
-			| + float getSaldo();						|
-			| + boolean deposito(float);					|
-			| + boolean saque (float);					|
-			|---------------------------------------------------------------|
+			|-----------------------------------------------| 	|---------------------------------------|
+			|		Conta_Bancaria			|	|		Conta_Poupanca		|
+			|-----------------------------------------------|	|---------------------------------------|
+			|	# Nome: string				|	|	- Aniversario: string		|
+			|	# Agencia: int				|	|	- Taxa: float			|
+			|	# NroConta: int				|<------|---------------------------------------|
+			|	# Saldo: float				|	| + Conta_Poupanca(); //construtor	|
+			|-----------------------------------------------|	| + void fazAniversario();		|
+			| + Conta_Bancaria(); //construtor		|	| + float getSaldo();			|
+			| + void Cadastro();				|	| + void Cadastro();			|
+			| + float getSaldo();				|	|---------------------------------------|
+			| + boolean deposito(float);			|
+			| + boolean saque (float);			|<------|---------------------------------------|
+			|-----------------------------------------------|	|		Conta_Corrente		|
+										|---------------------------------------|
+			|-------------------------------|			|	- Manutencao: float		|
+			|	Conta_Especial		|			|	- Aniversario: string		|
+			|-------------------------------|			|---------------------------------------|
+			|	- Limite: float		|---------------------->| + Conta_Corrente();//construtor	|
+			|	- Juros: float		|			| + void aplicarManutencao();		|
+			|-------------------------------|			| + void Cadastro();			|
+			| + Conta_Especial();		|			| + float getSaldo();			|
+			| + void Cadastro();		|			|---------------------------------------|
+			| + bool saque(float);		|
+			| + bool deposito(float);	|
+			|-------------------------------|
 			
-
+	Na anotação da UML, puxaremos uma seta da conta_poupança da conta bancária
 
 
 
