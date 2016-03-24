@@ -270,4 +270,26 @@ UTILIZANDO IDE'S NO C++
 		Ex: g++ ItensLista.cpp Itens.cpp main.cpp -o ItensLista
 		
 		
+RETORNANDO A HERANÇA....
+		# = atributo protegido (nem público e nem privado)
+			|---------------------------------------------------------------|
+			|		Conta_Bancaria				    	|
+			|---------------------------------------------------------------|
+			|	# Nome: string						|
+			|	# Agencia: int						|
+			|	# NroConta: int						|
+			|	# Saldo: float						|
+			|---------------------------------------------------------------|
+			| + Conta_Bancaria(); //construtor				|
+			| + void Cadastro();						|
+			| + float getSaldo();						|
+			| + boolean deposito(float);					|
+			| + boolean saque (float);					|
+			|---------------------------------------------------------------|
+			
+
+
+
+
+		
 		
