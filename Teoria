@@ -302,6 +302,88 @@ RETORNANDO A HERANÇA....
 	Na anotação da UML, puxaremos uma seta da conta_poupança da conta bancária
 
 
+	TIPOS DE HERANÇA
 
-		
-		
+- Herança para reutilização da implementação/herança para implementação
+
+- Herança para diferença
+
+- Herança para substituição do tipo
+
+a herança para implementação é usada quando se deseja apenas reaproveitar o desenvolvimento de  umaa classe.
+Nesse caso a herança nao representa a relação entre as classes, apenas é usada como forma de economizar código.
+Nesse tipo de herança, o programador fica preso à implementação da classe mãe, precisando sobrepor muitos métodos 
+e aumentando a dificuldade da manutenção de software.
+
+ O uso da herança para reutilização da implementação não é, normalmente, uma estratégia muito inteligente,
+ pois em alguns casos todo, ou quase todo o código terá que ser reescrito.
+ 
+ este tipo de herança, quando mal feita representa mais problemas do que facilidades.
+ 
+ 
+ A herança por diferença é utilizada quando a sub classe difere da superclasse em alguns aspectos, mas mantém uma forte conexão com a classe base.
+ É comumente conhecido como especialiazação, que traz para a implementação da classe filha apenas os pontos de diferenciação.
+ 
+ O uso adequado da herança por diferença permite que se realize a programação incremental, isto é, a adição de funcionalidades ao programa sem comprometer as funcionalidades já existentes.
+ a programação incremental possibilita a escrita de códigos menores e de mais fácil manutenção.
+ 
+ a especialização não exclui comportamento da classe base, pois não é possível fazer herança seletiva.
+ 
+ a especialização é feita adicionando novos métodos à classe base ou redefinindo métodos já existentes.
+ ao percorrer a hierarquia de heranaça de cima para baixo faz-se a especialização e ao pearcorrer a 
+ hierarquia de baixo para cima faz-se a generalização.
+ 
+ A herança por substituição de tipo dá ao métodos a capacidade de substituição, isto é, um método que utiliza um objeto de uma superclasse pode
+ também utilizar um objeto de uma classe derivada sem a necessidade de alterar o tipo do objeto e também não compromete o funcionamento do sistema.
+ 
+ A herança por substituição de tipo confere ao programa uma possibilidade maior de reutilização de codigo e permite que a operação de objetos tenha seu contexto ampliado.
+ 
+ essa característica de ampliação do contexto de operação é chamada de capacidade de conexão, que é uma característica bastante poderosa no desenvolvimento de software, pois
+ permite ao programa utilizar subtipos.
+ 
+ um subtipo é um tipo que estende outro por meio de herança
+ 
+ ENCAPSULAMENTO DE HERANÇA
+ 
+ A herança pode ser pública, privada ou protegida.
+ 
+ Na herança pública todos os membros da classe base mantém seu encapsulamento nas classes derivadas, isto é, os membros públicos da calsse base permanecem públicos nas classes derivadas e
+ os membros protegidos permanecem protegidos. Os membros privados não são acessíveis.
+ Na herança protegida, os membors públicos tornam-se protegidos na classe derivada e os membros protegidos tornam-se privados.
+ Na herança privada tanto os membros públicos quanto os membros protegidos tornam-se privados na classe derivada.
+ As heranças protegida e privada limitam a profundidade da hierarquia de herança.
+ 
+ Herança Múltipla
+ 
+ O paradigma de orientação a objetos prevê a existência de herança de múltiplas classes, contudo nem todas as linguagens implementam essa possibilidade.
+ Na herança múltipla uma classe herda as caracterísitcas e comportamentos de duas ou mais classes base.
+ 
+ A herança múltipla é um instrumento poderoso na construção de sistemas de informação orientados a objetos. Entretanto, o planejamento e a manutenção de
+ programas que se utilizam desse instrumento torna-se mais complexo e, caso não seja utilizado de forma adequada, pode deixar o software com problemas de organização, aumentando
+ a possibilidade de erros e a dificuldade na manutenção.
+ 
+ a linguagem c++ permite a herança múltipla que é implementada da seguinte forma:
+ 
+ 
+ class classeD:encap ClasseB1,classeB2,classeb3{
+ 	...
+ };
+ 
+ Aplicação								Conta_Premium			
+ #rendimento								#Manutencao
+ #periodicidade								------------------
+ --------------    		-------------------->			+baixaautomatica
+ +Aplicação()					      /			+Aplicacaoautomatica
+ +obterRetorno() 				    /  			+ConsultarRendimentos
+ +aplicar(valor)				  /
+						/
+		  			     /
+ Conta_Corrente				   / 			   
+ #Ag					  /				
+ #Nro					 /			 
+ #Saldo					/				
+ ---------------   -------------------->  
+ +Conta Corrente()
+ +Saque
+ +Deposito
+ +VerSaldo
