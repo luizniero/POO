@@ -1,2 +1,46 @@
-Implementar os métodos da Conta_Poupança, do código que ele mandará por e-mail.
-Entergar na próxima quinta-feira
+//Subclasse Conta Poupanca - 3º Trabalho valendo nota - Luiz Henrique Niero
+class Conta_Poupanca:public Conta_Bancaria {
+      protected:
+          float taxa;
+		  int diaAniversario;
+		  int mesAniversario;
+      public:
+          Conta_Poupanca();
+          void Cadastro();
+          float getSaldo();
+          void fazAniversario(); //único método diferente
+    };
+
+//método construtor, utiliza o método construtor da classe pai
+Conta_Poupanca::Conta_Poupanca():Conta_Bancaria(){
+	taxa = 0;
+	diaAniversario = 0;
+	mesAniversario = 0;
+}
+
+void Conta_Poupanca::Cadastro(){
+	Conta_Bancaria::Cadastro();
+	cout<<"\nDigite a Taxa de Juros";
+	cin>>taxa;
+	cout<<"\nDigite o dia do aniversario da conta:";
+	cin>>diaAniversario;
+	cout<<"\nDigite o mes do anviversario da conta:";
+	cin>>mesAniversario;
+}
+
+float Conta_Poupanca::getSaldo(){
+	fazAniversario();
+	return Saldo;
+}
+
+void Conta_Poupanca::fazAniversario(){
+	time_t t = time(0);   // obter a hora atual
+    struct tm *now = localtime( & t );
+	int dia, mes;
+	
+	mes = now->tm_mon+1;
+	dia = now->tm_mday;
+	
+	if(mes>mesAniversario && dia > diaAniversario)
+		Saldo = saldo + (saldo*taxa);
+}
