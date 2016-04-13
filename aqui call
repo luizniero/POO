@@ -1,0 +1,42 @@
+#include <string.h>
+#include <iostream>
+#include<ctime>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+
+class Horario{
+	private:
+		int minuto;
+		int segundo;
+	public:
+		Horario(int min, int seg);
+		print();
+};
+
+Horario::Horario(int min, int seg){
+	minuto = min;
+	segundo = seg;	
+}
+
+Horario::print(){
+	cout<<"\nMinuto:";
+	cout<<this->minuto;
+	cout<<"\nSegundo:";
+	cout<<this->segundo;
+}
+
+
+
+int main(){
+	cout<<"Programa que testa o construtor com argumentos";
+	int min = 45;
+	int seg = 30;	
+	Horario h = new Horario(min, seg);
+	h.print();
+	return 0;	
+	
+	
+}
