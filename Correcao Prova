@@ -3,3 +3,9 @@
     Reutilizavel:  Pois devido a capacidade de abstração dos programas orientados a objetos, torna-se possível reaproveitar os códigos
     já implementados.
     Manutenível:  Devido a obrigatoriedade de se manter o código organizado, melhorando a legibilidade do código.
+
+3)
+    Os atributos privados proibem que os valores dos atributos sejam acessados externamente.  Dessa forma, é necessaria a utilização
+de métodos para que ese possa obter e alterar o valor destes atributos, de forma controlada.  Esses métodos são o acessor e o modificador
+(get) e (set), que devem ser públicos.
+    É considerado uma boa prática de programação pois:   É uma forma de promover a garantia de consistência dos dados.
