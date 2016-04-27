@@ -399,4 +399,23 @@ diferentes classes com métodos em comum, embora com implementações diferentes
 associação do nome do método à sua implementação dá-se o nome de vinculação
 Sintaxe: Um método ou função virtual é declarado com o uso da palavra reservada VIRTUAL
 
+Ex:
+	Virtual void MetodoExemplo();
+	
+Exemplo de uso de funções virtuais:
+	Considere a classe FormaGeometrica que tem como subclasses as classes Triangulo, Retangulo, Quadrado e Circulo.  Cada uma
+das classes derivadas possui seu proprio metodo de calculo de area, o qual é diferente em cada uma desses classes.  A utilização
+de funções virtuais permite que se utilize o método de cálculo de área da classe FormaGeometrica e, dinamicamente, o programa aciona 
+a implementação correta de acordo com a refer~encia à subclasse adequada.  Isso somente é possível com a utilização da herença por
+substituição de tipo, já vista anteriormente.
+Observação:  Um método declarado como virtual permanece virtual em toda a hierarquia da herança, mesmo que nas classes derivadas
+não se utilize a palavra virtual.  Para dar maior clareza, recomenda-se a declaração do método virtual em todas as classes
+derivadas.
+
+	CLASSES ABSTRATAS
+	
+	Em algumas ocasiões desejamos criar uma classe base que será usada apenas para herança, não possuindo nenhum objeto
+instanciado.  Por exemplo, a definição da classe ContaBancaria, a qual servirá apenas de base para a herança.  Os objetos,
+nesse desenvolvimento serão apenas das classes derivadas (ContaSimples, ContaCorrente, ContaPoupanca, etc) e não da classe base.
+
 
