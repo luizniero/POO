@@ -387,3 +387,16 @@ e aumentando a dificuldade da manutenção de software.
  +Saque
  +Deposito
  +VerSaldo
+
+
+
+
+	FUNÇÕES VIRTUAIS
+	
+	As funções virtuais são usadas para permitir uma associação dinãmica de um método à sua implementação.  Isso é útil no caso de
+diferentes classes com métodos em comum, embora com implementações diferentes, que estão relacionadas por meio de herança.
+	Desta forma, as funções virtuai spermitem que o método a ser acionado seja determinad odinamicamente, a este processo de
+associação do nome do método à sua implementação dá-se o nome de vinculação
+Sintaxe: Um método ou função virtual é declarado com o uso da palavra reservada VIRTUAL
+
+
