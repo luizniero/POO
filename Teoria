@@ -449,3 +449,21 @@ mudanças no software.
 caminho pronto para as alterações que possam existir.
 	Um software de sucesso não é estático.  Na POO, o polimorfisom é o que confere essa capacidade de adaptação à mudanças,
 facilitando a evolução do software.
+	O polimorfismo é o 3º pilar da POO e este não existe sem os outros 2.  Portanto, para entender o polimorfismo é preciso
+entender de encapsulamento e herança.
+	Polimorfismo significa muitas formas, na programação remete a capacidade de um único nome de classe ou método poder
+estar associado a diferentes implementações que são vinculadas dinamicamente.
+exemplo:
+	classe Personalidade
+	subclasses: Otimista, Pessimista, Introvertido, Extrovertido
+	
+	Ao usarmos herança para substituição de tipo, um objeto da classe personalidade pode se comportar como qualquer uma das
+subclasses. 
+	O polimorfismo pode ser dividido em 4 tipos:
+		- Polimorfismo de inclusão
+		- Polimorfismo paramétrico
+		- Sobrescrita
+		- Sobrecarga
+	
+	Os 3 últimos tipos já foram vistos, sendo que o polimorfismo paramétrico é obtido com o uso de gabaritos (templates).
+
