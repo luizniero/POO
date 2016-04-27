@@ -417,5 +417,14 @@ derivadas.
 	Em algumas ocasiões desejamos criar uma classe base que será usada apenas para herança, não possuindo nenhum objeto
 instanciado.  Por exemplo, a definição da classe ContaBancaria, a qual servirá apenas de base para a herança.  Os objetos,
 nesse desenvolvimento serão apenas das classes derivadas (ContaSimples, ContaCorrente, ContaPoupanca, etc) e não da classe base.
+	Nesta situação, pode-se definir uma classe abstrata, que nada mais é do que uma classe que não pode ter objetos iniciados.
+Para que uma classe seja abstrata, devemos declarar pelo menos uma função virtual pura. (mesmo assim ela pode ter construtor,
+pois eu posso usa-lo no meio da herança).  Uma função virtual pura não possui implementação e é inicializada com o valor 0.
+
+Sintaxe:  virtual tipoRetorno Nome (parametros)
+
+	Ao tentarmos instanciar um objeto de uma classe abstrata, o compilador apresenta um erro de sintaxe.  As classes derivadas
+de uma classe abstrata devem sobrescrever os métodos virtuais puros com a devida implementação para que estas tornem-se classes
+concretas.
 
 
