@@ -439,3 +439,13 @@ implementação.
 Benefícios do uso de interfaces:
 	- Deixam disponível apenas o comportamento da classe, tornando mais fácil a inclusão de incrementos ou o tratamento das
 mudanças no software.
+	- Melhor utilização da abstração, pois deixa-se visível apenas o que pode ser acessado, forçando a escrita de código abstrato.
+	- Previne excesso de recompilação de código, pois diminui dependências entre implementações
+	
+	
+	POLIMORFISMO
+	
+	Software estão em constante evolução, por isso o desenvolvimento deve se antever as possibilidades de mudança e deixar um
+caminho pronto para as alterações que possam existir.
+	Um software de sucesso não é estático.  Na POO, o polimorfisom é o que confere essa capacidade de adaptação à mudanças,
+facilitando a evolução do software.
