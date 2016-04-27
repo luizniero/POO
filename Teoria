@@ -467,3 +467,10 @@ subclasses.
 	
 	Os 3 últimos tipos já foram vistos, sendo que o polimorfismo paramétrico é obtido com o uso de gabaritos (templates).
 
+	O polimorfismo de inclusão é feito com o uso de uma referência á classe base (ponteiro), que pode apenas conter funções
+virtuais, pode ser uma classe abstrata ou uma interface.  A este ponteiro associamos um objeto de uma de suas subclasses, da 
+mesma forma da herança por substituição de tipo.
+	A implementçaão de polimorfismo depende da utilização de funções virtuais, para que haja a vinculação dinãmica dos métodos.
+	A utilização de classes abstratas inibe a instanciação de objetos, mas não de ponteiros.  Desta forma, torna-se possível
+sua utilização para implementar polimorfismo.  É por meio do uso de interfaces e polimorfismo que se torna possível o acoplamento
+de software e integração de diferentes componentes.
