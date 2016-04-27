@@ -428,3 +428,14 @@ de uma classe abstrata devem sobrescrever os métodos virtuais puros com a devid
 concretas.
 	Observação:  Uma classe concreta é aquela que pode ter objetos instanciados.  Por outro lado as classes abstratas
 não podem ter objetos instanciados
+
+
+	INTERFACES
+	Em c++ uma interface é uma classe que possui apenas funções virtuais puras e um destrutor virtual vazio para garantir que
+os objetos não mais utilizados sejam liberados da memória ao termino de sua utilização.  Assim como as classes abstratas, as
+interfaces não podem ter objetos instanciados.  Contudo, as interfaces diferem das classes abstratas por não possuírem nenhuma
+implementação.
+	Ao utilizarmos interfaces, toda a implementação fica a cargo das classes derivadas
+Benefícios do uso de interfaces:
+	- Deixam disponível apenas o comportamento da classe, tornando mais fácil a inclusão de incrementos ou o tratamento das
+mudanças no software.
