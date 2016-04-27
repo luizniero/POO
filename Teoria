@@ -421,7 +421,7 @@ nesse desenvolvimento serão apenas das classes derivadas (ContaSimples, ContaCo
 Para que uma classe seja abstrata, devemos declarar pelo menos uma função virtual pura. (mesmo assim ela pode ter construtor,
 pois eu posso usa-lo no meio da herança).  Uma função virtual pura não possui implementação e é inicializada com o valor 0.
 
-Sintaxe:  virtual tipoRetorno Nome (parametros)
+Sintaxe:  virtual tipoRetorno Nome (parametros) = 0;
 
 	Ao tentarmos instanciar um objeto de uma classe abstrata, o compilador apresenta um erro de sintaxe.  As classes derivadas
 de uma classe abstrata devem sobrescrever os métodos virtuais puros com a devida implementação para que estas tornem-se classes
