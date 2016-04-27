@@ -426,5 +426,5 @@ Sintaxe:  virtual tipoRetorno Nome (parametros) = 0;
 	Ao tentarmos instanciar um objeto de uma classe abstrata, o compilador apresenta um erro de sintaxe.  As classes derivadas
 de uma classe abstrata devem sobrescrever os métodos virtuais puros com a devida implementação para que estas tornem-se classes
 concretas.
-
-
+	Observação:  Uma classe concreta é aquela que pode ter objetos instanciados.  Por outro lado as classes abstratas
+não podem ter objetos instanciados
