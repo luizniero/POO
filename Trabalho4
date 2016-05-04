@@ -1,0 +1,5 @@
+Implementar o exercicio de pedido.
+
+Após desenfileirar o pedido, ele deverá ir par auma lista de pedidos atendidos.
+Deve ser possível visualizar o pedido atendido mais rapido, o mais demorado e a media de tempo de atendimento dos pedidos.
+Entregar 07/05
