@@ -474,3 +474,19 @@ mesma forma da herança por substituição de tipo.
 	A utilização de classes abstratas inibe a instanciação de objetos, mas não de ponteiros.  Desta forma, torna-se possível
 sua utilização para implementar polimorfismo.  É por meio do uso de interfaces e polimorfismo que se torna possível o acoplamento
 de software e integração de diferentes componentes.
+
+
+25/06/2016 - ultimo tópico da matéria
+
+		Objetos e Métodos Constantes
+		
+	Existem determinadas situações em que alguns objetos ou informações não podem ser alterados ao longo da execução do programa.
+A estes objetos e informações deve ser atribuídos a propriedade ser constantes.
+	A palavra reservada CONST deve ser utilizada para especificar objetos e informações que não são modificáveis.
+	Um erro de sintaxe é exibido ao tentarmos modificar o valor de um objeto const.
+	Para os objetos const não é permitido fazer chamada e nenhum método ou função que não sejam igualmente delcarados como const.
+	Um método ou função cnstatne possui a palavra reservada CONST após a lista de parãmetros
+	
+Exemplo:  int Classe::getValor() const {
+		returnValor;
+	  }
