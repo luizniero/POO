@@ -490,3 +490,14 @@ A estes objetos e informações deve ser atribuídos a propriedade ser constante
 Exemplo:  int Classe::getValor() const {
 		returnValor;
 	  }
+	  
+	  Nãoi é possível definir como const métodos que modifiquem as informações do objeto como, por exemplo, os métodos
+modificadores (set).
+	Os métodos construtores e destrutores não devem ser declarados como const, pois necessitam modificar as informações
+do objeto.
+	Note que os métodos construtores podem ser chamados mesmo para objetos const.
+	Quando se declaram membros atributos, de uma classe como constantes, esses membros devem ser inicializados com o uso
+de inicializadores.
+	Os inicializadores levam o mesmo nome do atributo e são chamados com o operador dois pontos (:).  Após a lista de
+parametros da implementação do método.
+	Caso seja necessário acionar mais um inicializador, estes devem ser separados por vírcula (,).
