@@ -522,3 +522,26 @@ parametros da implementação do método.
 	Iteradores de Input
 		Permitem comparação de igualdade (==) e desigualdade (!=)
 		Podem ser referenciados (tratados como ponteiros) (*a) (a->m)
+		
+	Interadores de Output
+		Inplementam as característica dos iteradores de Input
+		Permitem a atribuição de valores de maneira indireta através de ponteiros
+		
+	Iteradores Forward
+		Implementam as características dos iteradores de output
+		Devem possuir construtor padrão:  tipo(), tipo a;
+		Devem ter a p´ropriedade de multipass, isto é, o tratamento do iterador, como um ponteiro não interfere
+		na capacidade de incremento
+		
+	Iteradores Bidirecionais
+		Implementam as características dos iteradores forward
+		Podem efetuar a operação de decremento(--)
+		
+	Iteradores Random Access
+		Implementam as características dos iteradores Bidirecionais
+		Implementar operações aritméticas de soma(+) e subtração(-)
+		Suportam comparação de desigualdade (>,<,>=,<=)
+		Suportam atribuições compostas (+=, -=)
+		Suportam o operador de deslocamento ([]=> vetor de iteradores)
+		
+		
