@@ -2,7 +2,8 @@ Sempre que criamos um projeto, a ide cria um pacote e uma classe, a principal.
 
 Um pacote, em java é quase correspondente ao NAMESPACE do c++.
 
-Na classe principal, o método public static void main será o principal (main).
+Na classe principal, o método public static void main será o principal (main).  Outras classes não principais não podem ter o método main();
+
 
 Para imprimir uma mensagem no java, utilizamos o comando println, que está dentro do pacote system.out.println (digita só sout e da um tab).
 
@@ -20,3 +21,4 @@ JavaDoc: /**
   Para acessar a documentação, vamos ao método e digitamos ctrl + espaço.  Aparece tudo que foi digitado na documentação.
       
   
+Em Java, quando classes estão no mesmo pacote, não é preciso dar o include no início do código, como c++.
