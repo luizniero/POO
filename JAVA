@@ -1,1 +1,22 @@
-aa
+Sempre que criamos um projeto, a ide cria um pacote e uma classe, a principal.
+
+Um pacote, em java é quase correspondente ao NAMESPACE do c++.
+
+Na classe principal, o método public static void main será o principal (main).
+
+Para imprimir uma mensagem no java, utilizamos o comando println, que está dentro do pacote system.out.println (digita só sout e da um tab).
+
+Quando colocamos um comando que falta a sua biblioteca, a ide nos diz que está faltando importar esta biblioteca, e se damos alt+enter
+a própria ide já mostra as opções disponíveis de bibliotecas.
+
+Utilizamos a biblioteca Scanner para leitura de dados.
+
+Métodos estáticos só acessam outros métodos estáticos.
+
+JavaDoc: /**
+          *
+          */
+      Essa é a documentação de um método.
+  Para acessar a documentação, vamos ao método e digitamos ctrl + espaço.  Aparece tudo que foi digitado na documentação.
+      
+  
